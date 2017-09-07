@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="../HoneyComb1.1/css/global/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../HoneyComb1.1/css/global/HoneyComb.min.css"/>
+    <link rel="stylesheet" href="css/Education.css"/>
+    <script src="../HoneyComb1.1/srcipt/Global/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../HoneyComb1.1/srcipt/DataPresentation/table/tableDataOperation.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script src="../HoneyComb1.1/srcipt/PageInteraction/modal/layer-v2.1/layer/layer.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script src="laypage-v1.3/laypage/laypage.js" type="text/javascript" charset="utf-8"></script>
+    <title>题库管理</title>
+
+</head>
+
+<body>
+<div class="questionCont">
+    <div class="table-top">
+        <label>题目：</label>
+        <input type="text" id="topic" class="input-focus" value="" placeholder="请输入题目"/>
+        <div class="input-group dis-inline">
+            <label>题型：</label>
+        </div>
+        <div id="operation-infosel" class="patientlist_infosel">
+            <p>题型<i></i></p>
+            <ul>
+                <li><a href="#">全部</a></li>
+                <li><a href="#">单选题</a></li>
+                <li><a href="#">多选题</a></li>
+            </ul>
+        </div>
+        <!--下拉结束-->
+        <div class="input-group dis-inline">
+            <span id="question_search_btn" class="input-group-btn spanBg hover">搜索</span>
+        </div>
+    </div>
+    <div class="question_edit">
+        <div class="input-group dis-inline">
+            <span id="question_add" class="input-group-btn spanBg hover">添加</span>
+        </div>
+        <div class="input-group dis-inline">
+            <span id="question_del" class="input-group-btn spanBg hover">删除</span>
+        </div>
+    </div>
+    <div class="table-content">
+        <table id="table_id" class="table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <thead>
+            <tr>
+                <th width="100">选择</th>
+                <th style="display: none;"></th>
+                <th>题目</th>
+                <th>答案</th>
+                <th>类别</th>
+                <th>添加日期</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="table-setting">
+            <span id="table-dataallcheck" class="table-dataallcheck" data-check=""><i></i>全选</span>
+            <!--  <span id="table-dataexport" class="table-dataexport"><i></i>导出</span>
+    <span id="table-dataprint" class="table-dataprint"><i></i>打印</span>
+    <span id="table-edit" class="table-edit"><i></i>编辑</span>
+    <span id="table-delete" class="table-delete"><i></i>删除</span>
+    <span id="table-dataallexport" class="table-dataallexport"><i></i>导出全部</span>-->
+        </div>
+    </div>
+    <!--
+        添加题目弹窗
+    -->
+    <div class="question_page">
+
+    </div>
+</div>
+<div id="addQuest_modal" class="dis-none">
+    <!-- 试题的唯一ID-->
+    <div id="question_Id" class="dis-none">
+    </div>
+    <!--题库ID-->
+    <div id="testItemBlankId" class="dis-none">
+    </div>
+    <div class="addQuest_modal_cont">
+        <div class="input-group">
+            <label>题目：</label>
+            <input type="text" id="operation_title" class="input-focus" style="width: 670px;" value=""
+                   placeholder="请输入题目"/>
+        </div>
+        <div class="input-group dis-inline mar-top-10">
+            <label>题型：</label>
+            <div id="operation-infosel-modal" class="operation_infosel border">
+                <p>题型<i></i></p>
+                <ul class="border">
+                    <li><a href="#">单选题</a></li>
+                    <li><a href="#">多选题</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="input-group dis-inline mar-top-10 float-rt mar-rig-20">
+            <label>正确答案</label>
+        </div>
+        <div class="option mar-top-10">
+        </div>
+        <div class="add_option dis-inline">
+            增加选项
+        </div>
+        <div class="option_btn mar-top-10">
+						<span id="option_submit" class="hover spanBg">
+							提交
+						</span>
+						<span id="option_reset" class="spanBg1">
+							重置
+						</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/common.js" charset="UTF-8"></script>
+<script src="../resources/js/questionBank.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+body {
+	font-family: 'Microsoft YaHei', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+input, p{
+	padding: 0;
+	margin: 0;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+.login_top,.login_foot{
+    position: absolute;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.login_top{
+    height: 140px;
+    top: 0;
+    display: table;
+}
+.login_top span,.login_foot span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.login_foot span{
+    text-align: center;
+}
+.login_top span{
+    padding-left: 104px;
+}
+.login_foot{
+    height: 160px;
+    bottom: 0;
+    display: table;
+}
+.login_cont{
+    position: relative;
+    width: 100%;
+    top: 140px;
+    bottom: 160px;
+    background: url(../../img/global/login/bg.png) no-repeat;
+    background-size: 100% 100%;
+    overflow: auto;
+}
+.login_form{
+    position: absolute;
+    width: 300px;
+    height: 215px;
+    right: 112px;
+    top: 100px;
+    background: url(../../img/global/login/loginbase.png) repeat-x;
+}
+.userName,.passWord,.submit{
+    position: relative;
+    width: 232px;
+    height: 42px;
+    margin:20px auto 0 auto;
+}
+.login_form label{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-color: #60666f;
+}
+.login_form label img{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    padding: 8px;
+}
+.login_form input{
+    position: absolute;
+    left: 42px;
+    padding-left: 10px;
+    vertical-align: top;
+    font-size: 16px;
+    width: 180px;
+    line-height: 42px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+}
+.login_form input::-ms-input-placeholder{
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.login_form input::-webkit-input-placeholder{
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.login_form input::-moz-placeholder{
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.submit a{
+    display: block;
+    height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 42px;
+    text-decoration: none;
+
+}
+.tip_error{
+    line-height: 20px;
+    padding-left: 35px;
+    color: orangered;
+}
+.yellow_up{
+    background: url(../../img/global/login/btn_login.png) repeat-x;
+}
+.yellow_down{
+    background: url(../../img/global/btn_tianjia_push.png) repeat-x;
+}
